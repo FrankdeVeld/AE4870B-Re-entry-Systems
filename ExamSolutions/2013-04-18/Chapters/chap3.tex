@@ -1,0 +1,57 @@
+\section{ Aerodynamics:Parachutes }\label{sec:q3} 
+\subsection*{a.}
+Two main requirements which may require parachute system:
+\begin{itemize}
+    \item Maximum mechanical load / limit impact speed
+    \item Observation time of the atmosphere / control the descent duration
+\end{itemize}
+
+\subsection*{b.}
+The pilot parachute is to give initial deceleration or force for the deployment of the main parachute. The drogue parachute is attached to the payload and is used to provide stabilisation and initial deceleration. The main parachute lastly gives the largest contribution to deceleration of the payload.
+
+\subsection*{c.}
+Parachute reefing is the controlled restriction of the canopy at the skirt. It is used to control the total drag area and in this way the deceleration, flight time and mechanical loads.
+
+\subsection*{d.}
+Parachute clusters are used to increase drag area, to make fabrication easier, for redundancy reasons, for adjustment of drag area during flight and for shorter inflation time.
+
+\subsection*{e.}
+Vertical equilibrium means:
+\begin{equation}
+    D_p + D_{EV} = mg
+\end{equation}
+Here, P indicates the parachute and EV the entry vehicle.
+
+The general formula for drag is given by $D = \frac{1}{2} S C_d \rho V^2$, so this gives:
+\begin{equation}
+    \frac{1}{2}\rho V^2 (S_{p}C_{D_p} + S_{EV}C_{D_{EV}}) = mg
+\end{equation}
+
+We want to solve for the impact velocity, thus:
+\begin{equation}
+    V^2  =\frac{2 mg}{\rho} \frac{1}{S_{p}C_{D_p} + S_{EV}C_{D_{EV}}}
+\end{equation}
+
+\subsection*{f.}
+Now we want to solve for $S_{p}$. First assume that the drag due to the entry vehicle is negligible compared to the drag of the parachute:
+\begin{equation}
+    \frac{1}{2}\rho V^2 S_{p}C_{D_p} = mg
+\end{equation}
+Next, we solve for $S_p$:
+\begin{equation}
+     S_{p} = \frac{2mg}{\rho V^2 C_{D_p}}
+\end{equation}
+
+Lastly, assume that the parachute has a circular shape, such that:
+
+\begin{equation}
+     R_p = \sqrt{\frac{2mg}{\rho V^2 C_{D_p} \pi}} = \frac{45.16 m^2/s}{V}
+\end{equation}
+
+Now fill in the values. Obtained is:
+
+\begin{itemize}
+    \item $V_f = 8$ m/s gives $R_p$ = 5.64 m \\ 
+    \item $V_f = 10$ m/s gives $R_p$ = 4.52 m \\ 
+    \item $V_f = 12$ m/s gives $R_p$ = 3.76 m \\ 
+\end{itemize}
